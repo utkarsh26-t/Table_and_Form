@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Time Table -->
+    <h1>This is Time Table</h1>
+    <table border = "5" cellspacing = "9" cellpadding = "10" bgcolor = "lightgray">
+        <thead>
+            <tr>
+                <th>Days / Periods</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th></th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Mon</td>
+               <td>Biology</td>
+               <td>English</td>
+               <td>Hindi</td>
+               <td rowspan = "6"> B<br>R<br>E<br>A<br>K </td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Social Science</td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>Maths</td>
+                <td>Hindi</td>
+                <td>English</td>
+                <td>Social Science</td>
+                <td>Biology</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td colspan = "2">Social Science</td>
+                <td rowspan = "3">Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td rowspan = "3">Chemistry</td>
+            </tr>
+            <tr>
+                <td>Thurs</td>
+                <td rowspan = "3">Physics</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td rowspan = "2">Biology</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>English</td>
+                <td>Social Science</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>Hindi</td>
+                <td>Chemistry</td>
+                <td colspan = "3">Maths</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan = "8">This is Class IX</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Form -->
+    <h1> My Bio Data </h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for = "firstname">FirstName :</label>
+            <input type = "text" placeholder = "First Name" id = "firstname" required>
+            <label for = "lastname">LastName :</label>
+            <input type = "text" placeholder = "Last Name" id = "lastname" required><br><br>
+            Male:
+            <input type = "radio" name = "gender">
+            Female:
+            <input type = "radio" name = "gender">
+            Other:
+            <input type = "radio" name = "gender">
+            <br><br>
+            <label for = "DOB"> Date of Birth :</label>
+            <input type = "date" id = "DOB" required><br><br>
+            <label for = "email">Email :</label>
+            <input type = "email" id = "email" placeholder = "Enter your Email" required><br><br>
+            <label for = "telephone">Phone </label>
+            <input type = "tel" maxlength = "10" id = "telephone" placeholder = "+91" required><br><br>
+            <label for = "height">Height </label>
+            <input type = "text" id = "height" placeholder = "Height in Feet" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for = "sn">School Name :</label>
+            <input type = "text" id = "sn" placeholder = "School Name" required><br><br>
+            <label for = "class">Class :</label>
+            <input type = "number" id = "class" placeholder = "Enter Class" max = "12" required><br><br>
+            <label for = "stream">Stream :</label>
+            <select id = "stream">
+                <option>Stream</option>
+                <option>PCM</option>
+                <option>PCB</option>
+                <option>Commerce with Maths</option>
+                <option>Commerce with Hindi</option>
+                <option>Arts</option>
+            </select>
+            <br><br>
+            <label for = "marksheet">Marksheet :</label>
+            <input type = "file" id = "marksheet" required>
+        </fieldset>
+        <br>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
